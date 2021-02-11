@@ -1,0 +1,46 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe 활성 파일 빌드",
+            "command": "D:\\MSYS2\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "D:\\MSYS2\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "컴파일러: D:\\MSYS2\\mingw64\\bin\\gcc.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe 활성 파일 빌드",
+            "command": "D:\\MSYS2\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "D:\\MSYS2\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "컴파일러: D:\\MSYS2\\mingw64\\bin\\gcc.exe"
+        }
+    ]
+}

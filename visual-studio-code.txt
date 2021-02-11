@@ -1,0 +1,40 @@
+(Visual Studio Code)
+The "code ." command opens VS Code in the current working folder, which becomes your "workspace". 
+As you go through the tutorial, you will see three files created in a .vscode folder in the workspace:
+	- tasks.json (build instructions)
+	- launch.json (debugger settings)
+	- c_cpp_properties.json (compiler path and IntelliSense settings)
+
+
+(tasks.json)
+From the main menu, choose Terminal > Configure Default Build Task. 
+In the dropdown, which will display a tasks dropdown listing various predefined build tasks for C++ compilers. 
+Choose g++.exe build active file, which will build the file that is currently displayed (active) in the editor.
+
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe 활성 파일 빌드",
+            "command": "D:\\MSYS2\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "D:\\MSYS2\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "컴파일러: D:\\MSYS2\\mingw64\\bin\\gcc.exe"
+        }
+    ]
+}
